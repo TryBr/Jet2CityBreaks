@@ -1,0 +1,100 @@
+/*================================
+=            Header            =
+================================*/
+
+.header .header-info .contacts {
+	float: left;
+}
+
+.container960 {
+	margin: 0 auto;
+	width: 960px;
+	padding: 0 10px;
+}
+
+
+@redColor: #ed1c24;
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/*================================
+=            Header            =
+================================*/
+
+.header {
+	.header-info {
+		.contacts {
+			.phone__number {
+				color: #6d6f72;
+				font-size: 24px;
+				font-weight: bold;
+			}
+
+			.phone__text {
+				color: #bfbfbf;
+				font-size: 13px;
+			}
+		}
+
+		.marks {
+			padding-top: 6px;
+			float: right;
+			.abta {
+				float: left;
+			}
+			.protected {
+				float: left;
+			}
+		}
+	}
+
+	.header-top-nav {
+		background: #f2f2f2;
+		position: relative;
+		height: 30px;
+		line-height: 30px;
+		margin-bottom: 24px;
+		clear: both;
+		&:before {
+			content: "";
+			position: absolute;
+			left: -11px;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-top: 30px solid #f2f2f2; 
+			border-left: 11px solid transparent;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			right: -11px;
+			top: 0;
+			width: 0;
+			height: 0; 
+			border-right: 11px solid transparent;
+			border-top: 30px solid #f2f2f2;
+		}
+
+		.top-menu {
+			padding: 0px;
+			margin: 0 auto;
+			.menu__item {
+				display: inline-block;
+				padding: 0 28px;
+				.menu__link {
+					color: @redColor;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Header  ======*/
