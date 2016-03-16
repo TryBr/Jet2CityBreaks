@@ -5,12 +5,17 @@
 	padding: 0 10px;
 
 	&.no-padding {
-		padding: 0px;
 	}
 }
 
 
 @redColor: #ed1c24;
+
+    /* Custom, iPhone Retina */ 
+    .container960.no-padding {
+	padding: 0;
+
+    }
 
 a {
 	text-decoration: none;
@@ -24,7 +29,6 @@ a {
 	color: #6d6f72;
 	font-size: 18px;
 	text-transform: none;
-	padding-left: 10px;
 	margin-bottom: 25px;
 }
 
@@ -299,7 +303,14 @@ a {
 	.cities-items {
 		.item {
 			position: relative;
-			padding: 0 10px;
+			width: 229px;
+			padding: 0px;
+			margin-right: 18px;
+
+			&:nth-child(4) {
+				margin-right: 0px;
+			}
+
 			.item__img {
 				max-width: 229px;
 			}
@@ -359,6 +370,104 @@ a {
 /*=====  End of CITIES  ======*/
 
 
+/*==================================
+=            LATE DEALS            =
+==================================*/
+
+.late-deals-wrapper {
+	.deals-items {
+		width: 670px;
+		float: left;
+		.deal-item {
+			background: #f4f4f4;
+			border-bottom: 3px solid #ededed;
+			position: relative;
+			padding: 0;
+			margin: 0px 20px 20px 0px;
+			height: 124px;
+			width: 315px;
+
+			.item__link {
+				text-decoration: none;
+				.photo-container {
+					width: 110px;
+					height: 120px;
+					float: left;
+					margin-right: 20px;
+				}
+
+				.sale__label {
+					background: #ed1c24;
+					font-size: 18px;
+					color: #fff;
+					width: 65px;
+					height: 32px;
+					position: absolute;
+					top: 0;
+					text-transform: uppercase;
+					text-align: center;
+					left: -10px;
+					line-height: 1.8;
+				}
+
+				.title {
+					color: #6d6f72;
+					font-size: 24px;
+					padding-top: 12px;
+					padding-bottom: 10px;
+				}
+
+				.info {
+					.nights {
+						color: #424242;
+						font-size: 13px;
+					}
+
+					.value {
+						.number {
+							font-size: 30px;
+							color: #d1020e;
+							font-weight: bold;
+							float: left;
+						}
+
+						.person {
+							color: #ed1c24;
+							font-size: 12px;
+							font-weight: bold;
+							line-height: 1.2;
+							float: left;
+							margin-left: 10px;
+							margin-top: 8px;
+						}
+					}
+				}
+			}
+
+			&:after {
+				content: "";
+				background: url("../img/deals__red__arrow.png") no-repeat;
+				width: 8px;
+				height: 13px;
+				position: absolute;
+				right: 9px;
+				bottom: 15px;
+			}
+
+		}
+	}
+
+	.hassle-free-breaks {
+		width: 300px;
+		height: 320px;
+		background: #ed1c24;
+		border-bottom: 6px solid #be161d;
+		float: right;
+		margin-top: 20px;
+	}
+}
+
+/*=====  End of LATE DEALS  ======*/
 
 
 
