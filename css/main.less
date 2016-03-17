@@ -225,7 +225,7 @@ a {
 			float: left;
 			transition: all 0.2s;
 			&:hover {
-				background: url("../img/search__btn__icon.png") no-repeat center center lighten(#ed1c24, 10%);
+				background: url("../img/search__btn__icon.png") no-repeat center center darken(#ed1c24, 5%);
 			}
 
 			&:active {
@@ -729,6 +729,7 @@ a {
 	padding-top: 100px;
 	height: 518px;
 	margin-top: -110px;
+	margin-bottom: 30px;
 	.info-block {
 		.white__title {
 			float: left;
@@ -813,6 +814,74 @@ a {
 /*=====  End of DESTINATIONS  ======*/
 
 
+/*===============================
+=            SIGN UP            =
+===============================*/
+
+.sign-up-wrapper {
+	background: #6d6f72;
+	border-bottom: 3px solid #57595b;
+	height: 87px;
+
+	.title {
+		color: #ffffff;
+		font-size: 24px;
+		text-transform: uppercase;
+		text-align: left;
+		line-height: 1;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	.text {
+		color: #ffffff;
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.8;
+		padding-top: 15px;
+		.bold {
+			font-weight: bold;
+		}
+	}
+
+	.sign-up-form {
+		margin-top: 20px;
+		.sign-up__field {
+			width: 274px;
+			height: 47px;
+			background: #fff;
+			border: none;
+			border-bottom: 3px solid #cccccc;
+			padding-left: 20px;
+			float: left;
+		}
+
+		.sign-up__btn {
+			width: 100px;
+			height: 47px;
+			background: #ed1c24;
+			border: none;
+			border-bottom: 3px solid #be161d;
+			float: left;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			transition: all 0.2s;
+
+			&:hover {
+				background: darken(#ed1c24, 5%);
+				border-bottom: 3px solid #be161d;
+			}
+
+			&:active {
+				background: darken(#ed1c24, 5%);
+				border-bottom: 0px;		
+			}
+		}
+	}
+}
+
+/*=====  End of SIGN UP  ======*/
 
 
 
@@ -862,41 +931,3 @@ a {
 
 /*=====  End of Стили для разрешений  ======*/
 
-
-    /* Custom, iPhone Retina */ 
-    .white__title {
-	color: #fff;
-	font-size: 18px;
-	text-transform: none;
-	margin-bottom: 25px;
-
-    }
-
-
-    /* Custom, iPhone Retina */ 
-    .destinations-wrapper {
-	background: url(../img/destination-bg.jpg) no-repeat center center;
-	padding-top: 25;
-
-    }
-
-
-    /* Custom, iPhone Retina */ 
-    .destinations-wrapper .info-block .white__title {
-	float: left;
-
-    }
-
-
-    /* Custom, iPhone Retina */ 
-    .destinations-wrapper .info-block .view__all__link {
-	color: #fff;
-	font-size: 16px;
-	float: right;
-	margin-top: 20px;
-	position: relative;
-	display: block;
-	padding-right: 18px;
-	background: url(../img/view__all__arrow.png) no-repeat right center;
-
-    }
