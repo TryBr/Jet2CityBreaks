@@ -26,6 +26,13 @@ a {
 	margin-bottom: 25px;
 }
 
+.white__title {
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: none;
+	margin-bottom: 25px;
+}
+
 .learn__more__btn {
 	width: 150px;
 	height: 45px;
@@ -672,6 +679,23 @@ a {
 
 .city-events-wrapper {
 	margin-bottom: 50px;
+	
+	.info-block	{
+		.gray__title {
+			float: left;
+		}
+		.view__all__link {
+			color: #6d6f72;
+			font-size: 16px;
+			float: right;
+			margin-top: 20px;
+			position: relative;
+			display: block;
+			padding-right: 18px;
+			background: url("../img/view__all__arrow.png") no-repeat right center;
+		}
+	}
+
 	.swiper-wrapper {
 		.swiper-slide {
 			padding-bottom: 5px;
@@ -696,6 +720,97 @@ a {
 }
 
 
+/*====================================
+=            DESTINATIONS            =
+====================================*/
+
+.destinations-wrapper {
+	background: url("../img/destination-bg.jpg") no-repeat center center;
+	padding-top: 100px;
+	height: 518px;
+	margin-top: -110px;
+	.info-block {
+		.white__title {
+			float: left;
+		}
+
+		.view__all__link {
+			color: #ffffff;
+			font-size: 16px;
+			float: right;
+			margin-top: 20px;
+			position: relative;
+			display: block;
+			padding-right: 18px;
+			background: url("../img/view__all__arrow.png") no-repeat right center;
+		}
+	}
+
+	.destination-nav-col {
+		padding-right: 20px;
+	}
+
+	.destinations-nav {
+		.destination__btn {
+			background: none;
+			border: 1px solid #969391;
+			height: 72px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 14px;
+			color: #fff;
+			width: 100%;
+			margin-bottom: 10px;
+			position: relative;
+			transition: all 0.2s;
+			&:hover, &.active {
+				background: #e5ae1b;
+				border: 1px solid #e5ae1b;
+				&:after {
+					content: '';
+					position: absolute;
+					right: -14px;
+					width: 0;
+					height: 0;
+					border-top: 35px solid transparent;
+					border-left: 13px solid #e5ae1b;
+					border-bottom: 35px solid transparent;
+					top: 0;
+				}
+			}
+		}
+	}
+
+	.destinations-info {
+		.city-list {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			.city__item {
+				border-bottom: 1px dotted #7d8a8e;
+				background: url("../img/cities__list__item__arrow.png") center right no-repeat;
+
+				&:last-child {
+					border-bottom: none;
+				}
+				.city__link {
+					padding-left: 10px;
+					color: #fff;
+					font-size: 16px;
+					display: block;
+					text-decoration: none;
+					padding: 12px 0px;
+
+					&:hover {
+						color: #e5ae1b;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of DESTINATIONS  ======*/
 
 
 
@@ -744,4 +859,44 @@ a {
 
 
 
+
 /*=====  End of Стили для разрешений  ======*/
+
+
+    /* Custom, iPhone Retina */ 
+    .white__title {
+	color: #fff;
+	font-size: 18px;
+	text-transform: none;
+	margin-bottom: 25px;
+
+    }
+
+
+    /* Custom, iPhone Retina */ 
+    .destinations-wrapper {
+	background: url(../img/destination-bg.jpg) no-repeat center center;
+	padding-top: 25;
+
+    }
+
+
+    /* Custom, iPhone Retina */ 
+    .destinations-wrapper .info-block .white__title {
+	float: left;
+
+    }
+
+
+    /* Custom, iPhone Retina */ 
+    .destinations-wrapper .info-block .view__all__link {
+	color: #fff;
+	font-size: 16px;
+	float: right;
+	margin-top: 20px;
+	position: relative;
+	display: block;
+	padding-right: 18px;
+	background: url(../img/view__all__arrow.png) no-repeat right center;
+
+    }
