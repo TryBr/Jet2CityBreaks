@@ -72,34 +72,38 @@
     <!-- MAIN MENU BGN -->
     <div class="main-menu-wrapper">
       <div class="container960">
-        <nav class="navbar main--navbar" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="main-menu">
-              <li class="menu__item"><a href="" class="menu__link">Home</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Holidays</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Beach</a></li>
-              <li class="menu__item"><a href="" class="menu__link">City Breaks</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Deals</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Extras</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Information</a></li>
-              <li class="menu__item"><a href="" class="menu__link">Flight Only</a></li>
-            </ul>
-            <form class="navbar-form nav--search" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control search--field" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default btn__search"></button>
-            </form>
-          </div>
-        </nav>
+        <div class="col-md-9">
+          <nav class="navbar main--navbar" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="main-menu">
+                <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Holidays</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Beach</a></li>
+                <li class="menu__item"><a href="" class="menu__link">City Breaks</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Deals</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Extras</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Information</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Flight Only</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-3">
+          <form class="navbar-form nav--search" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control search--field" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default btn__search"></button>
+          </form>
+        </div>
       </div>
     </div>
     <!-- MAIN MENU END -->
@@ -199,133 +203,137 @@
       <div class="container960">
         <div class="row">
           <!-- DEALS ITEMS BGN -->
-          <div class="deals-items clearfix">
-            <div class="deals-info clearfix">
+          <div class="deals-items col-md-8 clearfix">
+            <div class="row">
+              <div class="deals-info clearfix">
               <h3 class="gray__title">Late Deals from</h3>
               <!-- Single button -->
-              <div class="btn-group">
-                <button type="button" class="select--btn dropdown-toggle" data-toggle="dropdown">Leeds Bradford<span class="caret"></span></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Действие</a></li>
-                  <li><a href="#">Другое действие</a></li>
-                  <li><a href="#">Что-то иное</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Отдельная ссылка</a></li>
-                </ul>
+                <div class="btn-group">
+                  <button type="button" class="select--btn dropdown-toggle" data-toggle="dropdown">Leeds Bradford<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Действие</a></li>
+                    <li><a href="#">Другое действие</a></li>
+                    <li><a href="#">Что-то иное</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Отдельная ссылка</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="deal-item col-md-6 col-sm-3">
-              <a href="" class="item__link">
-                <div class="sale__label">
-                sale!
-                </div>
-                <div class="photo-container">
-                  <img src="img/barcelona__img.jpg" alt="" class="deal__img">
-                </div>
-                <div class="title">
-                  Barcelona
-                </div>
-                <div class="info">
-                  <div class="nights">
-                    4 Nights from
+            <div class="row">
+              <div class="deal-item col-md-6">
+                <a href="" class="item__link">
+                  <div class="sale__label">
+                  sale!
                   </div>
-                  <div class="value">
-                    <div class="number">
-                      £220
-                    </div>
-                    <div class="person">
-                      Per<br>
-                      Person
-                    </div>
+                  <div class="photo-container">
+                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="deal-item col-md-6 col-sm-3">
-              <a href="" class="item__link">
-                <div class="sale__label">
-                sale!
-                </div>
-                <div class="photo-container">
-                  <img src="img/barcelona__img.jpg" alt="" class="deal__img">
-                </div>
-                <div class="title">
-                  Barcelona
-                </div>
-                <div class="info">
-                  <div class="nights">
-                    4 Nights from
+                  <div class="title">
+                    Barcelona
                   </div>
-                  <div class="value">
-                    <div class="number">
-                      £220
+                  <div class="info">
+                    <div class="nights">
+                      4 Nights from
                     </div>
-                    <div class="person">
-                      Per<br>
-                      Person
+                    <div class="value">
+                      <div class="number">
+                        £220
+                      </div>
+                      <div class="person">
+                        Per<br>
+                        Person
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="deal-item col-md-6 col-sm-3">
-              <a href="" class="item__link">
-                <div class="sale__label">
-                sale!
-                </div>
-                <div class="photo-container">
-                  <img src="img/barcelona__img.jpg" alt="" class="deal__img">
-                </div>
-                <div class="title">
-                  Barcelona
-                </div>
-                <div class="info">
-                  <div class="nights">
-                    4 Nights from
+                </a>
+              </div>
+              <div class="deal-item col-md-6">
+                <a href="" class="item__link">
+                  <div class="sale__label">
+                  sale!
                   </div>
-                  <div class="value">
-                    <div class="number">
-                      £220
-                    </div>
-                    <div class="person">
-                      Per<br>
-                      Person
-                    </div>
+                  <div class="photo-container">
+                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="deal-item col-md-6 col-sm-3">
-              <a href="" class="item__link">
-                <div class="sale__label">
-                sale!
-                </div>
-                <div class="photo-container">
-                  <img src="img/barcelona__img.jpg" alt="" class="deal__img">
-                </div>
-                <div class="title">
-                  Barcelona
-                </div>
-                <div class="info">
-                  <div class="nights">
-                    4 Nights from
+                  <div class="title">
+                    Barcelona
                   </div>
-                  <div class="value">
-                    <div class="number">
-                      £220
+                  <div class="info">
+                    <div class="nights">
+                      4 Nights from
                     </div>
-                    <div class="person">
-                      Per<br>
-                      Person
+                    <div class="value">
+                      <div class="number">
+                        £220
+                      </div>
+                      <div class="person">
+                        Per<br>
+                        Person
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+              <div class="deal-item col-md-6">
+                <a href="" class="item__link">
+                  <div class="sale__label">
+                  sale!
+                  </div>
+                  <div class="photo-container">
+                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
+                  </div>
+                  <div class="title">
+                    Barcelona
+                  </div>
+                  <div class="info">
+                    <div class="nights">
+                      4 Nights from
+                    </div>
+                    <div class="value">
+                      <div class="number">
+                        £220
+                      </div>
+                      <div class="person">
+                        Per<br>
+                        Person
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="deal-item col-md-6">
+                <a href="" class="item__link">
+                  <div class="sale__label">
+                  sale!
+                  </div>
+                  <div class="photo-container">
+                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
+                  </div>
+                  <div class="title">
+                    Barcelona
+                  </div>
+                  <div class="info">
+                    <div class="nights">
+                      4 Nights from
+                    </div>
+                    <div class="value">
+                      <div class="number">
+                        £220
+                      </div>
+                      <div class="person">
+                        Per<br>
+                        Person
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <!-- DEALS ITEMS END -->
           <!-- HASSLE FREE BREAKS BGN -->
-          <div class="hassle-free-breaks">
+          <div class="hassle-free-breaks col-md-4">
             <div class="title">Hassle Free Breaks</div>
             <div class="hassle-item">
               <img src="img/hassle_geo_icon.png" alt="" class="item__img">
