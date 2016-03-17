@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -200,7 +200,20 @@
         <div class="row">
           <!-- DEALS ITEMS BGN -->
           <div class="deals-items clearfix">
-            <h3 class="gray__title">Late Deals from</h3>
+            <div class="deals-info clearfix">
+              <h3 class="gray__title">Late Deals from</h3>
+              <!-- Single button -->
+              <div class="btn-group">
+                <button type="button" class="select--btn dropdown-toggle" data-toggle="dropdown">Leeds Bradford<span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Действие</a></li>
+                  <li><a href="#">Другое действие</a></li>
+                  <li><a href="#">Что-то иное</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Отдельная ссылка</a></li>
+                </ul>
+              </div>
+            </div>
             <div class="deal-item col-md-6 col-sm-3">
               <a href="" class="item__link">
                 <div class="sale__label">

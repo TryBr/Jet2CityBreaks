@@ -381,8 +381,40 @@ a {
 		width: 670px;
 		float: left;
 
-		.gray__title {
-			margin-top: 0px;
+		.deals-info {
+			clear: both;
+			.gray__title {
+				margin-top: 4px;
+				float: left;
+			}
+
+			.btn-group {
+				margin-left: 30px;
+				.select--btn {
+					background: none;
+					border: none;
+					color: #ed1c24;
+					font-size: 18px;
+					text-transform: uppercase;
+					box-shadow: none;
+
+					.caret {
+						background: url("../img/deals__red__arrow__select.png") no-repeat;
+						width: 13px;
+						height: 8px;
+						border: none;
+						margin-left: 20px;
+					}
+				}
+
+				.dropdown-menu {
+				    width: 100%;
+				    border-radius: 0;
+				    border: none;
+				    background: #F4F4F4;
+				    border-bottom: 3px solid #EDEDED;
+				}
+			}
 		}
 
 		.deal-item {
