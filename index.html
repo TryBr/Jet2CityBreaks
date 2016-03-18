@@ -10,10 +10,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -66,6 +69,73 @@
           </div>
           <!-- HEADER INFO END -->
         </div>
+        <!-- SEARCH FORM BGN -->
+        <div class="search-form">
+          <div id="tabs">
+            <ul>
+              <li class="tab-1"><a href="#tabs-1">Search Holidays</a></li>
+              <li class="tab-2"><a href="#tabs-2">City Breaks</a></li>
+              <li class="tab-3"><a href="#tabs-3">Flights Only</a></li>
+            </ul>
+            <div id="tabs-1">
+              <form action="" class="city-break-form">
+                <div class="field-group clearfix">
+                  <label class="label" for="">From</label>
+                  <input class="text__field" type="text" placeholder="Departure Airport">
+                  <a href="" class="choose__link">Choose from list</a>
+                </div>
+                <div class="field-group clearfix">
+                  <label class="label" for="">To</label>
+                  <input class="text__field" type="text" placeholder="Destination">
+                  <a href="" class="choose__link">Choose from list</a>
+                </div>
+                <div class="departure-arrival-group clearfix">
+                  <div class="field-group departure-group  clearfix">
+                    <label class="label" for="">Departure</label>
+                    <input class="text__field" type="text" placeholder="17.10.14">
+                  </div>
+                  <div class="field-group arrival-group clearfix">
+                    <label class="label" for="">Arrival</label>
+                    <input class="text__field" type="text" placeholder="dd.mm.yy">
+                  </div>
+                  <div class="field-group room-spinner clearfix">
+                    <label class="label" for="">No. of Rooms</label><br>
+                    <input id="spinner" name="value">
+                  </div>
+                  <div class="field-group select-list clearfix">
+                    <label class="label" for="">Room 1</label><br>
+                    <div class="btn-group">
+                      <label class="label" for="">Adults</label>
+                      <button type="button" class="select--btn dropdown-toggle" data-toggle="dropdown">2<span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="field-group select-list children-value clearfix">
+                    <div class="btn-group">
+                      <label class="label" for="">Adults</label>
+                      <button type="button" class="select--btn dropdown-toggle" data-toggle="dropdown">2<span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <button class="find__btn red--lm--btn">
+                  Find My City Break
+                </button>
+              </form>
+            </div>
+            <div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+            <div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+          </div>
+        </div>
+        <!-- SEARCH FORM END -->
       </div>
     </header>
     <!-- HEADER END -->
@@ -145,7 +215,9 @@
     <div class="cities-wrapper clearfix">
       <div class="container960">
         <div class="row">
-        <h3 class="gray__title">Trending Cities</h3>
+        <div class="col-md-12">
+          <h3 class="gray__title">Trending Cities</h3>
+        </div>
           <div class="cities-items clearfix">
             <div class="item col-md-3 col-sm-3">
               <a href="#" class="item__link">
@@ -162,7 +234,7 @@
             </div>
             <div class="item col-md-3 col-sm-3">
               <a href="#" class="item__link">
-                <img src="img/prague__img.jpg" alt="" class="item__img">
+                <img src="img/dussledorf__img.jpg" alt="" class="item__img">
                 <div class="price">
                   <div class="text">From only</div>
                   <div class="value">£444</div>
@@ -172,7 +244,7 @@
             </div>
             <div class="item col-md-3 col-sm-3">
               <a href="#" class="item__link">
-                <img src="img/prague__img.jpg" alt="" class="item__img">
+                <img src="img/rome__img.jpg" alt="" class="item__img">
                 <div class="price">
                   <div class="text">From only</div>
                   <div class="value">£444</div>
@@ -185,7 +257,7 @@
                 <div class="sale__label">
                   Sale!
                 </div>
-                <img src="img/prague__img.jpg" alt="" class="item__img">
+                <img src="img/ny__img.jpg" alt="" class="item__img">
                 <div class="price">
                   <div class="text">From only</div>
                   <div class="value">£444</div>
@@ -207,7 +279,6 @@
             <div class="row">
               <div class="deals-info clearfix">
               <h3 class="gray__title">Late Deals from</h3>
-              <!-- Single button -->
                 <div class="btn-group">
                   <button type="button" class="select--btn dropdown-toggle" data-toggle="dropdown">Leeds Bradford<span class="caret"></span></button>
                   <ul class="dropdown-menu" role="menu">
@@ -227,7 +298,7 @@
                   sale!
                   </div>
                   <div class="photo-container">
-                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
+                    <img src="img/deal-1.jpg" alt="" class="deal__img">
                   </div>
                   <div class="title">
                     Barcelona
@@ -254,10 +325,10 @@
                   sale!
                   </div>
                   <div class="photo-container">
-                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
+                    <img src="img/deal-2.jpg" alt="" class="deal__img">
                   </div>
                   <div class="title">
-                    Barcelona
+                    New York
                   </div>
                   <div class="info">
                     <div class="nights">
@@ -281,10 +352,10 @@
                   sale!
                   </div>
                   <div class="photo-container">
-                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
+                    <img src="img/deal-3.jpg" alt="" class="deal__img">
                   </div>
                   <div class="title">
-                    Barcelona
+                    Venice
                   </div>
                   <div class="info">
                     <div class="nights">
@@ -308,10 +379,10 @@
                   sale!
                   </div>
                   <div class="photo-container">
-                    <img src="img/barcelona__img.jpg" alt="" class="deal__img">
+                    <img src="img/deal-4.jpg" alt="" class="deal__img">
                   </div>
                   <div class="title">
-                    Barcelona
+                    Krakow
                   </div>
                   <div class="info">
                     <div class="nights">
@@ -334,25 +405,27 @@
           <!-- DEALS ITEMS END -->
           <!-- HASSLE FREE BREAKS BGN -->
           <div class="hassle-free-breaks col-md-4">
-            <div class="title">Hassle Free Breaks</div>
-            <div class="hassle-item">
-              <img src="img/hassle_geo_icon.png" alt="" class="item__img">
-              <div class="item__title">
-                Find your city
+            <a href="" class="hasle__link">
+              <div class="title">Hassle Free Breaks</div>
+              <div class="hassle-item">
+                <img src="img/hassle_geo_icon.png" alt="" class="item__img">
+                <div class="item__title">
+                  Find your city
+                </div>
               </div>
-            </div>
-            <div class="hassle-item">
-              <img src="img/hassle_airplane_icon.png" alt="" class="item__img">
-              <div class="item__title">
-                Select your<br>flight
+              <div class="hassle-item">
+                <img src="img/hassle_airplane_icon.png" alt="" class="item__img">
+                <div class="item__title">
+                  Select your<br>flight
+                </div>
               </div>
-            </div>
-            <div class="hassle-item">
-              <img src="img/hassle_hotel_icon.png" alt="" class="item__img">
-              <div class="item__title">
-                Choose your<br>hotel
+              <div class="hassle-item">
+                <img src="img/hassle_hotel_icon.png" alt="" class="item__img">
+                <div class="item__title">
+                  Choose your<br>hotel
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <!-- HASSLE FREE BREAKS END -->
         </div>
@@ -396,8 +469,10 @@
       <div class="container960">
         <div class="row">
           <div class="info-block clearfix">
-            <h3 class="gray__title">Upcoming City Events</h3>
-            <a href="#" class="view__all__link">View all Events</a>
+            <div class="col-md-12">
+              <h3 class="gray__title">Upcoming City Events</h3>
+              <a href="#" class="view__all__link">View all Events</a>
+            </div>
           </div>
           <div class="city-events-slider-wrapper">
 
@@ -431,10 +506,10 @@
                       <img src="img/city__event__img__1.jpg" alt="" class="item__img">
                       <div class="event__date">
                         <div class="date__number">
-                          20
+                          01
                         </div>
                         <div class="date__month">
-                          nov
+                          dec
                         </div>
                       </div>
                       <div class="event__city">
@@ -454,10 +529,10 @@
                       <img src="img/city__event__img__1.jpg" alt="" class="item__img">
                       <div class="event__date">
                         <div class="date__number">
-                          20
+                          03
                         </div>
                         <div class="date__month">
-                          nov
+                          dec
                         </div>
                       </div>
                       <div class="event__city">
@@ -555,8 +630,10 @@
       <div class="container960">
         <div class="row">
           <div class="info-block clearfix">
+          <div class="col-md-12">
             <h3 class="white__title">Fly to Over 40 Destinations</h3>
             <a href="#" class="view__all__link">View all Events</a>
+          </div>
           </div>
           <div class="col-md-3 destination-nav-col">
             <div class="destinations-nav">
@@ -575,28 +652,28 @@
             <div class="col-md-3">
               <ul class="city-list">
                 <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
+                <li class="city__item"><a href="#" class="city__link">Amsterdam</a></li>
+                <li class="city__item"><a href="#" class="city__link">Barcelona</a></li>
+                <li class="city__item"><a href="#" class="city__link">Budapest</a></li>
+                <li class="city__item"><a href="#" class="city__link">Dusseldorf</a></li>
               </ul>
             </div>
             <div class="col-md-3">
               <ul class="city-list">
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
+                <li class="city__item"><a href="#" class="city__link">Florence</a></li>
+                <li class="city__item"><a href="#" class="city__link">Krakow</a></li>
+                <li class="city__item"><a href="#" class="city__link">Las Palmas</a></li>
+                <li class="city__item"><a href="#" class="city__link">Malaga</a></li>
+                <li class="city__item"><a href="#" class="city__link">Nice</a></li>
               </ul>
             </div>
             <div class="col-md-3">
               <ul class="city-list">
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
-                <li class="city__item"><a href="#" class="city__link">Alicante</a></li>
+                <li class="city__item"><a href="#" class="city__link">New York</a></li>
+                <li class="city__item"><a href="#" class="city__link">Paris</a></li>
+                <li class="city__item"><a href="#" class="city__link">Prague</a></li>
+                <li class="city__item"><a href="#" class="city__link">Rome</a></li>
+                <li class="city__item"><a href="#" class="city__link">Venice</a></li>
               </ul>
             </div>
           </div>
@@ -608,26 +685,28 @@
     <div class="sign-up clearfix">
       <div class="container960">
         <div class="row">
-          <div class="sign-up-wrapper">
-            <div class="col-md-2">
-              <div class="title">
-                Sign up<br>
-                and Win
+          <div class="col-md-12">
+            <div class="sign-up-wrapper">
+              <div class="col-md-2">
+                <div class="title">
+                  Sign up<br>
+                  and Win
+                </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="text">
-                Sign up for our Exclusive Offers and
-                <span class="bold">WIN a 7 night All Inclusive holiday!</span>
+              <div class="col-md-4">
+                <div class="text">
+                  Sign up for our Exclusive Offers and
+                  <span class="bold">WIN a 7 night All Inclusive holiday!</span>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <form action="" class="sign-up-form">
-                <input type="text" class="sign-up__field" placeholder="Enter your email address">
-                <button class="sign-up__btn">
-                  Sign up
-                </button>
-              </form>
+              <div class="col-md-6">
+                <form action="" class="sign-up-form">
+                  <input type="text" class="sign-up__field" placeholder="Enter your email address">
+                  <button class="sign-up__btn">
+                    Sign up
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -706,26 +785,22 @@
               </div>
               <div class="col-md-4">
                 <ul class="footer-menu-list">
-                  <li class="title">Holidays</li>
-                  <li class="item"><a href="" class="item__link">Beach Holidays</a></li>
-                  <li class="item"><a href="" class="item__link">City Breaks</a></li>
-                  <li class="item"><a href="" class="item__link">All Inclusive</a></li>
-                  <li class="item"><a href="" class="item__link">Family Holidays</a></li>
-                  <li class="item"><a href="" class="item__link">Short Breaks</a></li>
-                  <li class="item"><a href="" class="item__link">Adult Holidays</a></li>
-                  <li class="item"><a href="" class="item__link">Our Destinations</a></li>
+                  <li class="title">Information</li>
+                  <li class="item"><a href="" class="item__link">About Us</a></li>
+                  <li class="item"><a href="" class="item__link">Contact Us</a></li>
+                  <li class="item"><a href="" class="item__link">Latest Travel Information</a></li>
+                  <li class="item"><a href="" class="item__link">Essential Holiday Information</a></li>
+                  <li class="item"><a href="" class="item__link">FAQs</a></li>
+                  <li class="item"><a href="" class="item__link">Careers</a></li>
+                  <li class="item"><a href="" class="item__link">Credit Card Charges</a></li>
                 </ul>
               </div>
               <div class="col-md-4">
                 <ul class="footer-menu-list">
-                  <li class="title">Holidays</li>
-                  <li class="item"><a href="" class="item__link">Beach Holidays</a></li>
-                  <li class="item"><a href="" class="item__link">City Breaks</a></li>
-                  <li class="item"><a href="" class="item__link">All Inclusive</a></li>
-                  <li class="item"><a href="" class="item__link">Family Holidays</a></li>
-                  <li class="item"><a href="" class="item__link">Short Breaks</a></li>
-                  <li class="item"><a href="" class="item__link">Adult Holidays</a></li>
-                  <li class="item"><a href="" class="item__link">Our Destinations</a></li>
+                  <li class="title">Jet2holidays</li>
+                  <li class="item"><a href="" class="item__link">Manage Booking</a></li>
+                  <li class="item"><a href="" class="item__link">Visit Mobile Site</a></li>
+                  <li class="item"><a href="" class="item__link">Mobile Apps</a></li>
                 </ul>
               </div>
             </div>
@@ -818,6 +893,7 @@
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/swiper.min.js"></script>
+        <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

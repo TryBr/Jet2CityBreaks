@@ -343,7 +343,7 @@ a {
 	.cities-items {
 		.item {
 			position: relative;
-			padding: 0px 10px;;
+			padding: 0px 10px;
 
 			&:nth-child(4) {
 				margin-right: 0px;
@@ -469,6 +469,13 @@ a {
 				margin-right: 0px;
 			}
 
+			&:hover {
+				background: #de1219;
+				div {
+					color: #fff !important;
+				}
+			}
+
 			.item__link {
 				text-decoration: none;
 				.photo-container {
@@ -546,7 +553,20 @@ a {
 		height: 320px;
 		margin: 0 10px;
 		padding: 0;
-		width: 300px;;;
+		width: 300px;
+
+		&:hover {
+			background: darken(#ed1c24, 5%);
+		}
+
+		&:active {
+			background: darken(#ed1c24, 5%);
+			border-bottom: 0px;
+		}
+
+		.hasle__link {
+			text-decoration: none;
+		}
 
 		.title {
 			color: #ffffff;
@@ -744,7 +764,7 @@ a {
 			position: relative;
 			display: block;
 			padding-right: 18px;
-			background: url("../img/view__all__arrow.png") no-repeat right center;
+			background: url("../img/view__all__white__arrow.png") no-repeat right center;
 		}
 	}
 
@@ -981,7 +1001,7 @@ a {
 
 				.item__link {
 					display: block;
-					line-height: 2.6;;;
+					line-height: 2.6;
 				}
 
 				.item__img {
@@ -997,6 +1017,11 @@ a {
 	
 	.footer-info-row-1 {
 		background: url("../img/city-bg.png") no-repeat center bottom;
+
+		.col-md-4:nth-child(1) {
+			padding-left: 0px;
+		}
+
 		.footer-menu-list {
 			padding: 0px;
 			margin: 0px;
@@ -1090,7 +1115,7 @@ a {
 
 	.footer-info-row-3 {
 		text-align: center;
-		padding: 30px 0;;
+		padding: 30px 0;
 	}
 }
 
@@ -1101,6 +1126,422 @@ a {
 
 
 
+/*===================================
+=            SEARCH FORM            =
+===================================*/
+
+.search-form {
+	height: 500px;
+	top: 220px;
+	z-index: 5;
+	position: absolute;
+	x: ;
+	width: 530px;
+
+	.ui-tabs {
+		border-radius: 0px;
+		border: none;
+		background: none;
+
+		.tab-1 {
+			background: url(../img/tab-icon-1.png) no-repeat 10% center #fff!important;
+
+			&:hover {
+				background: url(../img/tab-icon-1-hover.png) no-repeat 10% center #F2F2F2!important;
+			}
+
+			&.ui-state-active {
+				background: url(../img/tab-icon-1-hover.png) no-repeat 10% center #F2F2F2!important;	
+			}
+		}
+
+		.tab-2 {
+			background: url(../img/tab-icon-2.png) no-repeat 10% center #fff!important;
+
+			&:hover {
+				background: url(../img/tab-icon-2-hover.png) no-repeat 10% center #F2F2F2!important;	
+			}
+
+			&.ui-state-active {
+				background: url(../img/tab-icon-2-hover.png) no-repeat 10% center #F2F2F2!important;	
+			}
+		}
+
+		.tab-3 {
+			background: url(../img/tab-icon-3.png) no-repeat 10% center #fff!important;
+
+			&:hover {
+				background: url(../img/tab-icon-3-hover.png) no-repeat 10% center #F2F2F2!important;	
+			}
+
+			&.ui-state-active {
+				background: url(../img/tab-icon-3-hover.png) no-repeat 10% center #F2F2F2!important;	
+			}
+		}
+	}
+
+	.ui-widget-header {
+		background: none;
+		border: none;
+		border-radius: 0px;
+		padding: 0;
+		margin: 0px 10px;
+	}
+
+	.ui-tabs .ui-tabs-nav li {
+		height: 48px;
+		background: #ffffff;
+		border: none;
+		border-bottom: 5px solid #e5e5e5;
+		border-radius: 0px;
+		text-align: center;
+		margin-right: 6px;
+		padding: 0 7px;
+	}
+
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+		margin-top: -5px;
+		height: 54px;
+		background: #f2f2f2;
+		border-bottom: 5px solid #f2f2f2;
+
+		.ui-tabs-anchor {
+			font-weight: bold;
+			color: #6d6f72;
+			outline: none;
+		}
+
+
+	}
+
+	.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+		display: block;
+		float: none;
+		padding: 12px;
+		color: #a0a0a0;
+		font-size: 16px;
+		font-weight: normal;
+		outline: none;
+		padding-left: 40px;
+	}
+
+	.ui-tabs .ui-tabs-panel {
+		background: #f2f2f2;
+		border-radius: 0px;
+		border-bottom: 5px solid #e5e5e5;;
+	}
+
+	.city-break-form {
+
+		.departure-arrival-group {
+			padding: 13px 0;
+			border-top: 1px solid #f9f9f9;
+			border-bottom: 1px solid #f9f9f9;
+			margin-top: 12px;
+			width: 480px;
+		}
+	
+		.field-group {
+			position: relative;
+			.label {
+				color: #ffffff;
+				font-size: 16px;
+				text-align: center;
+				background: #bfbfbf;
+				width: 101px;
+				height: 55px;
+				border-radius: 0px;
+				float: left;
+				padding: 0;
+				line-height: 55px;
+			}
+
+			.text__field {
+				background: #ffffff;
+				height: 55px;
+				border: none;
+				float: left;
+				width: 379px;
+				padding-left: 10px;
+				position: relative;
+
+			}
+
+			.choose__link {
+				position: absolute;
+				right: 45px;
+				color: #dd1f26;
+				font-size: 12px;
+				font-weight: bold;
+				top: 20px;
+
+				&:after {
+					content: "";
+					position: absolute;
+					right: -24px;
+					background: url(../img/geo-icon.png) no-repeat center center;
+					width: 11px;
+					height: 14px;
+				}
+			}
+
+			&.departure-group {
+				float: left;
+				margin-right: 8px;
+				position: relative;
+				.label {
+					background: #e5ae1b;
+					width: 115px;
+				}
+
+				.text__field {
+					width: 121px;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					right: 8px;
+					background: url(../img/departure-calendar-icon.png) no-repeat center center;
+					width: 15px;
+					height: 15px;
+					top: 20px;
+				}
+			}
+
+			&.arrival-group {
+				position: relative;
+				.label {
+					background: #bfbfbf;
+					width: 115px;
+				}
+
+				.text__field {
+					width: 121px;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					right: 8px;
+					background: url(../img/arrival-calendar-icon.png.png) no-repeat center center;
+					width: 15px;
+					height: 15px;
+					top: 20px;
+				}
+			}
+
+			&.room-spinner {
+				margin-top: 5px;
+				float: left;
+				width: 148px;
+				margin-right: 20px;
+				.label {
+					color: #6d6f72;
+					font-size: 16px;
+					font-weight: normal;
+					background: none;
+					width: auto;
+					height: auto;
+					float: none;
+					line-height: 0;
+					text-align: left;
+				}
+
+				.ui-spinner {
+					border-radius: 0px;
+					border: none;
+					margin-top: 5px;
+					.ui-spinner-input {
+					    border: 0 solid #fff;
+					    width: 50px;
+					    text-align: center;
+					    margin: 0 50px;
+					    padding: 14px 0;
+					    background: #ffffff;
+					    color: #6d6f72;
+					    font-size: 14px;
+					    font-weight: bold;
+					}
+
+					.ui-spinner-button {
+						width: 43px;
+						height: 55px;
+						border-radius: 0px;
+						background: #bfbfbf;
+						border: none;
+						cursor: pointer;
+
+						&.ui-state-hover {
+							border: none;
+							font-weight: normal;
+						}
+
+						.plus__icon {
+							font-size: 38px;
+						    color: #fff;
+						    text-indent: 0;
+						    font-weight: normal;
+						}
+
+						.minus__icon {
+							font-size: 38px;
+						    color: #fff;
+						    text-indent: 0;
+						    font-weight: normal;
+							padding-top: 5px;
+						}
+					}
+
+					.ui-spinner-up {
+						position: absolute;
+						left: 0;
+					}
+
+				}
+			}
+
+
+			&.select-list {
+				border-radius: 0px;
+				border: none;
+				margin-top: 5px;
+				float: left;
+
+				.label {
+					color: #6d6f72;
+					font-size: 16px;
+					font-weight: normal;
+					background: none;
+					width: auto;
+					height: auto;
+					float: none;
+					line-height: 0;
+					text-align: left;
+				}
+
+				.ui-spinner {
+					border-radius: 0px;
+					border: none;
+					margin-top: 5px;
+					.ui-spinner-input {
+					    border: 0 solid #fff;
+					    width: 50px;
+					    text-align: center;
+					    margin: 0 50px;
+					    padding: 14px 0;
+					    background: #ffffff;
+					    color: #6d6f72;
+					    font-size: 14px;
+					    font-weight: bold;
+					}
+
+					.ui-spinner-button {
+						width: 43px;
+						height: 55px;
+						border-radius: 0px;
+						background: #bfbfbf;
+						border: none;
+						cursor: pointer;
+
+						&.ui-state-hover {
+							border: none;
+							font-weight: normal;
+						}
+
+						.plus__icon {
+							font-size: 38px;
+						    color: #fff;
+						    text-indent: 0;
+						    font-weight: normal;
+						}
+
+						.minus__icon {
+							font-size: 38px;
+						    color: #fff;
+						    text-indent: 0;
+						    font-weight: normal;
+							padding-top: 5px;
+						}
+					}
+
+					.ui-spinner-up {
+						position: absolute;
+						left: 0;
+					}
+
+				}
+				
+				.btn-group {
+					margin-top: 5px;
+					margin-right: 16px;
+					.label {
+						color: #fff;
+					    font-size: 16px;
+					    text-align: center;
+					    background: #bfbfbf;
+					    width: 80px;
+					    height: 48px;
+					    border-radius: 0;
+					    float: left;
+					    padding: 0;
+						line-height: 48px;
+					}
+
+					.select--btn {
+						background: #fff;
+						border: none;
+						width: 68px;
+						height: 48px;
+						text-align: center;
+						box-shadow: none;
+						font-weight: bold;
+
+						.caret {
+							background: url("../img/caret__down__gray.png") no-repeat center center;
+							width: 13px;
+							height: 8px;
+							border: none;
+							margin-left: 26px;
+						}
+					}
+				}
+
+
+				&.children-value {
+					margin-top: 26px;
+
+					.btn-group {
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+
+		.find__btn {
+			width: 480px;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 24px;
+			position: relative;
+			height: 50px;
+			&:after {
+				content: '';
+				background: url("../img/search__btn__icon.png") no-repeat center center;
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				right: 15px;
+				top: 14px;
+			}
+		}
+	}
+}
+
+/*=====  End of SEARCH FORM  ======*/
 
 
 
